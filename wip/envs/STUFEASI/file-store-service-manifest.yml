@@ -1,0 +1,20 @@
+---
+inherit: ../wip-base-manifest.yml
+applications:
+- name: file-store-service-stuf-<space>
+  host: file-store-service-stuf-<space>
+  memory: 2GB
+  services:
+    - pg-file-store-service-stuf-<space>
+    - rabbitmq-35
+    - logstash-5
+    - stuf
+  env:
+    SPRING_PROFILES_ACTIVE: cloud
+    clientId: none
+    clientSecret: none
+    accessTokenEndpointUrl: none
+    readScope: filestore.consume
+    writeScope: filestore.tenant.TENANTID.ingest
+    ignoreTenantHeader: true
+    NEW_RELIC_APP_NAME: bms-file-store-service-stuf-<space>

@@ -1,0 +1,23 @@
+---
+inherit: ../wip-base-manifest.yml
+applications:
+- name: csv-parser-service-<space>
+  host: csv-parser-service-<space>
+  memory: 2GB
+  services:
+    - rabbitmq
+    - postgres
+  env:
+    WORK_ORDER_SERVICE_URL: https://workorderservice-qa2.run.asv-pr.ice.predix.io/v1/
+    CLIENT_ID: bms_csv_parser
+    CLIENT_SECRET: test
+    uaaServiceUrl: https://91069a10-02cc-41e3-a325-e34b2539905a.predix-uaa.run.asv-pr.ice.predix.io
+    filestoreConsumeScope: filestore.consume
+    workstoreIngestScope: workorder.ingest
+    acsUri: https://predix-acs.run.asv-pr.ice.predix.io
+    acsServiceInstanceNameToBind: predix-acs
+    accessTokenEndpointUrl: https://91069a10-02cc-41e3-a325-e34b2539905a.predix-uaa.run.asv-pr.ice.predix.io/oauth/token
+    trustedIssuerId1: https://91069a10-02cc-41e3-a325-e34b2539905a.predix-uaa.run.asv-pr.ice.predix.io/oauth/token
+    apmUserConfigUrl: https://apm-user-management-qa2.run.asv-pr.ice.predix.io
+    NEW_RELIC_APP_NAME: bms-csv-parser-service-<space>
+    rabbitmq_service_name: rabbitmq

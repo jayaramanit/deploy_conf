@@ -1,0 +1,8 @@
+---
+memory: 64M
+instances: 1
+domain: run.asv-pr.ice.predix.io
+stack: cflinuxfs2
+buildpack: predix_openresty_buildpack
+services:
+  - redis

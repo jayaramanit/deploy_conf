@@ -1,0 +1,19 @@
+---
+inherit: ../ea-base-manifest.yml
+applications:
+- name: material-service-<space>
+  host: material-service-<space>
+  services:
+    - pg-material-service-<space>
+    - stuf
+    - logstash-1
+  env:
+    clientId: <SEC_BMS_EA_SERVICE_CLIENT_ID>
+    clientSecret: <SEC_BMS_EA_SERVICE_CLIENT_SECRET>
+    NEW_RELIC_APP_NAME: bms-material-service-<space>
+    JBP_CONFIG_OPEN_JDK_JRE: '[memory_calculator: {memory_heuristics: {heap: 60, native: 25, metaspace: 10}}]'
+    java_opts: -XX:+AggressiveOpts -XX:+UseG1GC -XX:+UseStringDeduplication -XX:InitiatingHeapOccupancyPercent=70 -XX:MaxGCPauseMillis=200
+    spring_profiles_active: cloud
+    MIN_ACTIVE: 5
+    MAX_ACTIVE: 10
+    MAX_WAIT_TIME: 30000

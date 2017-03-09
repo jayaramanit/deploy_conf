@@ -1,0 +1,12 @@
+---
+inherit: ../ea-base-manifest.yml
+applications:
+- name: dt-simulator-jayaraman-<space>
+  memory: 4GB
+  instances: 1
+  services:
+    - logstash-1
+  env:
+      UAA_URI: https://47605211-0cab-46b0-ac17-d0b6f75c5a66.predix-uaa.run.asv-pr.ice.predix.io/oauth/token
+      UAA_CLIENT_SECRET: cHJlZGl4X2NsaWVudDpJTV9TT19TRUNSRVQ=
+      

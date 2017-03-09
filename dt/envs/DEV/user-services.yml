@@ -1,0 +1,15 @@
+---
+user_services:
+- service_instance: bm-predix
+  credentials:
+   predixTSUaaUri: <SEC_APM_UAA_URI>
+   predixTSUaaClientId: <SEC_BMS_EA_SERVICE_CLIENT_ID>
+   predixTSUaaClientSecret: <SEC_BMS_EA_SERVICE_CLIENT_SECRET>
+   predixTSUri: https://tsqs.ice.predix.io/v1/datapoints
+   predixAnalyticsCatalogUaaUri: <SEC_APM_UAA_URI>
+   predixAnalyticsCatalogUaaClientId: <SEC_BMS_EA_SERVICE_CLIENT_ID>
+   predixAnalyticsCatalogUaaClientSecret: <SEC_BMS_EA_SERVICE_CLIENT_SECRET>
+   predixAnalyticsCatalogUri: https://predix-analytics-catalog-release.run.asv-pr.ice.predix.io
+- service_instance: bm-apm
+  credentials:
+    apmAssetUrl: https://apm-asset-rc.run.asv-pr.ice.predix.io

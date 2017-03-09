@@ -1,0 +1,21 @@
+---
+applications:
+  - name: wip-mgr-ui-prod
+    host: wip-mgr-ui-prod
+    path: dist
+    domain: run.asv-pr.ice.predix.io
+    buildpack: https://github.com/cloudfoundry/buildpack-nodejs.git
+    memory: 128M
+    instances: 2
+    disk_quota: 256M
+    command: node app.js
+    services:
+      - logstash-3
+      - stuf
+    env:
+     workOrderService: https://workorderservice-prod.run.asv-pr.ice.predix.io
+     NEW_RELIC_APP_NAME: bms-wip-apphub-app-stuf-prod
+     routeService: https://route-service-prod.run.asv-pr.ice.predix.io/v1
+     NEW_RELIC_LICENSE_KEY: fbf49c3614ba36b16adcf814235a2c7299ec44f3
+     ENABLE_NEWRELIC_MONITORING: true
+     contextBrowserService: https://apm-asset-prod.apm-api.predix.com/v1/browse/

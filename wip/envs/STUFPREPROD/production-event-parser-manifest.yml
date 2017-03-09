@@ -1,0 +1,21 @@
+---
+inherit: ../wip-base-manifest.yml
+applications:
+- name: production-event-parser-<SEC_SPACE>
+  host: production-event-parser-<SEC_SPACE>
+  memory: 4GB
+  instances: 2
+  services:
+    - rabbitmq
+    - postgres
+    - logstash-1
+    - stuf
+  env:
+    PRODUCTION_EVENT_SERVICE_URL: https://json-production-event-service-<SEC_SPACE>.run.asv-pr.ice.predix.io
+    CLIENT_ID: <SEC_BMS_PROD_EVENT_PARSER_CLIENT_ID>
+    CLIENT_SECRET: <SEC_BMS_PROD_EVENT_PARSER_CLIENT_SECRET>
+    filestoreConsumeScope: filestore.consume
+    ProductionEventIngestScope: productionEvent.ingest
+    NEW_RELIC_APP_NAME: bms-production-event-parser-stuf-<SEC_SPACE>
+    rabbitmq_service_name: rabbitmq
+    MEMORY_LIMIT: 2G

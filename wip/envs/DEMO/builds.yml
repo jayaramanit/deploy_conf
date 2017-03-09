@@ -1,0 +1,27 @@
+---
+builds:
+- deployed_app_name: workorderservice
+  repository_name: KWMNO
+  generic_app_id: com/ge/bm/workorderservice
+  build_id: 127
+  artifact_name: workorderservice-0.0.1.<build_id>.jar
+  artifact_locator: <generic_app_id>/0.0.1.<build_id>/<artifact_name>
+- deployed_app_name: wip-apphub-app
+  repository_name: KWMNO
+  generic_app_id: com/ge/bm/wip-apphub-app
+  build_id: 60
+  artifact_name: wip-apphub-app-0.0.1.<build_id>.zip
+  artifact_locator: <generic_app_id>/0.0.1.<build_id>/<artifact_name>
+- deployed_app_name: file-store-service
+  repository_name: KWMNO
+  generic_app_id: com/ge/bm/predixmachine-http-data
+  build_id: 27
+  artifact_name: predixmachine-http-data-16.1.2.<build_id>.jar
+  artifact_locator: <generic_app_id>/16.1.2.<build_id>/<artifact_name>
+- deployed_app_name: csv-parser-service
+  repository_name: KWMNO
+  generic_app_id: com/ge/bm/csvparserservice
+  build_id: 68
+  artifact_name: csvparserservice-0.0.1.<build_id>.jar
+  artifact_locator: <generic_app_id>/0.0.1.<build_id>/<artifact_name>
+

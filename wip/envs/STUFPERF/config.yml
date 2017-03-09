@@ -1,0 +1,12 @@
+---
+cloud_provider:
+    type: cfcmd
+    url: https://api.system.asv-pr.ice.predix.io
+    org: bmdev
+    space: perf
+    default_domain: run.asv-pr.ice.predix.io
+    self_signed: true
+artifact_store:
+    type: artifactory
+    url: https://devcloud.swcoe.ge.com/artifactory
+hooks:

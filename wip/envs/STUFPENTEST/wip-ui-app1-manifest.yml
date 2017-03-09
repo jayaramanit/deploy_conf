@@ -1,0 +1,12 @@
+---
+inherit: ../wip-ui-base-manifest.yml
+applications:
+- name: wip-ui-app-<space>
+  host: wip-ui-app-<space>
+  env:
+    UAA_SERVER_URL: https://9fc6c38b-0977-40ed-a8e4-3c8a93096edf.predix-uaa.run.asv-pr.ice.predix.io
+    UAA_CLIENT_ID: bm_dev
+    UAA_AUTH_HEADER: Ym1fZGV2OmJtX2Rldl9jbGllbnRfc2VjcmV0
+    REDIS: redis
+    GREETING_SERVICE_URL: https://wip-walnut-Dev.run.asv-pr.ice.predix.io
+    WORK_ORDER_URL: https://workorderservice-Dev.run.asv-pr.ice.predix.io

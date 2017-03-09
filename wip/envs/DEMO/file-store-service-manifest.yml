@@ -1,0 +1,22 @@
+---
+inherit: ../wip-base-manifest.yml
+applications:
+- name: file-store-service-<space>
+  host: file-store-service-<space>
+  memory: 2GB
+  services:
+    - postgres
+    - rabbitmq
+  env:
+    SPRING_PROFILES_ACTIVE: cloud
+    clientId: bms_csv_parser
+    clientSecret: test
+    acsUri: https://predix-acs.run.asv-pr.ice.predix.io
+    acsServiceInstanceNameToBind: predix-acs
+    accessTokenEndpointUrl: https://91069a10-02cc-41e3-a325-e34b2539905a.predix-uaa.run.asv-pr.ice.predix.io/oauth/token
+    trustedIssuerId1: https://91069a10-02cc-41e3-a325-e34b2539905a.predix-uaa.run.asv-pr.ice.predix.io/oauth/token
+    apmUserConfigUrl: https://apm-user-management-qa2.run.asv-pr.ice.predix.io
+    readScope: filestore.consume
+    writeScope: filestore.tenant.TENANTID.ingest
+    ignoreTenantHeader: true
+    NEW_RELIC_APP_NAME: bms-file-store-service-<space>

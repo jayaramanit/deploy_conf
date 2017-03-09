@@ -1,0 +1,5 @@
+---
+user_services:
+- service_instance: cups-encryption-wip
+  credentials:
+   passphrase: <SEC_ENC_KEY>
