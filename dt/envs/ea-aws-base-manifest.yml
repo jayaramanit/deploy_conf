@@ -1,8 +1,0 @@
----
-memory: 1GB
-instances: 2
-domain: run.aws-usw02-pr.ice.predix.io
-disk_quota: 1GB
-buildpack: java_buildpack
-services:
-  - bms-newrelic
