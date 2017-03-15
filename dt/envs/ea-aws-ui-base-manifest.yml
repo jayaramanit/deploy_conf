@@ -1,8 +1,0 @@
----
-memory: 64M
-instances: 2
-domain: run.aws-usw02-pr.ice.predix.io
-stack: cflinuxfs2
-buildpack: predix_openresty_buildpack
-services:
-  - redis
