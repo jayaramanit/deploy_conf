@@ -1,9 +1,0 @@
----
-memory: 1GB
-instances: 1
-domain: run.asv-pr.ice.predix.io
-disk_quota: 1GB
-buildpack: java_buildpack
-services:
-  - bms-newrelic
-
