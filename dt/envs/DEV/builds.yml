@@ -5,4 +5,4 @@ builds:
   generic_app_id: com/ge/dt/predix/dt-simulator
   build_id: 0.0.1
   artifact_name: dt-simulator-0.0.1.jar
-  artifact_locator:com/ge/dt/predix/dt-simulator/0.0.1/dt-simulator-0.0.1.jar
+  artifact_locator: com/ge/dt/predix/dt-simulator/0.0.1/dt-simulator-0.0.1.jar
