@@ -1,9 +1,10 @@
-memory: 64M
-name: digital-twin-ui-jayaraman-<space>
-instances: 1
-domain: run.aws-usw02-pr.ice.predix.io
-stack: cflinuxfs2
-buildpack: nodejs_buildpack
-timeout: 360
-services:
+applications:
+- memory: 64M
+  name: digital-twin-ui-jayaraman-<space>
+  instances: 1
+  domain: run.aws-usw02-pr.ice.predix.io
+  stack: cflinuxfs2
+  buildpack: nodejs_buildpack
+  timeout: 360
+  services:
  
