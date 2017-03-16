@@ -1,10 +1,10 @@
 ---
 cloud_provider:
     type: cfcmd
-    url: https://api.system.asv-pr.ice.predix.io
-    org: DigitalDemoLounge-Select
+    url: https://api.system.aws-usw02-pr.ice.predix.io
+    org: jayaraman.ayyappan@ge.com
     space: dev
-    default_domain: run.asv-pr.ice.predix.io
+    default_domain: run.aws-usw02-pr.ice.predix.io
     self_signed: true
 artifact_store:
     type: artifactory
