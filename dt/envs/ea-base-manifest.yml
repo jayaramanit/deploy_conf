@@ -1,7 +1,7 @@
 ---
 memory: 1GB
 instances: 2
-domain: run.asv-pr.ice.predix.io
+domain: run.aws-usw02-pr.ice.predix.io
 disk_quota: 1GB
 buildpack: java_buildpack
 services:
