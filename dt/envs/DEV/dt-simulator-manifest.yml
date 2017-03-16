@@ -7,4 +7,4 @@ applications:
     
   env:
       UAA_URI: https://a6d64cf7-2528-48a7-82e4-9dd269949ad3.predix-uaa.run.aws-usw02-pr.ice.predix.io/oauth/token
-      UAA_CLIENT_SECRET: cHJlZGl4X2NsaWVudDpJTV9TT19TRUNSRVQ=
+      UAA_CLIENT_SECRET: IM_SO_SECRET
