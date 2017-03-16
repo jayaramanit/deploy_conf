@@ -1,9 +1,14 @@
 ---
 builds:
+- deployed_app_name: dt-simulator
+  repository_name:  SYJFA-SNAPSHOT
+  generic_app_id: com/ge/dt/predix/dt-simulator
+  build_id: 0.0.1
+  artifact_name: dt-simulator-0.0.1.jar
+  artifact_locator: com/ge/dt/predix/dt-simulator/0.0.1/dt-simulator-0.0.1.jar
 - deployed_app_name: digital-twin-ui
   repository_name:  SYJFA-SNAPSHOT
   generic_app_id: com/ge/dt/predix/
   build_id: 0.0.1
   artifact_name: digital-twin-ui.zip
   artifact_locator: com/ge/dt/predix/digital-twin-ui.zip
-
