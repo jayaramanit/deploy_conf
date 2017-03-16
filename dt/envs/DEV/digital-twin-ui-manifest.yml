@@ -1,4 +1,5 @@
 memory: 64M
+name: dt-UI-jayaraman-<space>
 instances: 1
 domain: run.aws-usw02-pr.ice.predix.io
 stack: cflinuxfs2
